@@ -153,7 +153,33 @@
     .project-tile {
         flex: 1 1 calc(50% - 24px);
     }
+
+    .textimg {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-box {
+        width: 90%;
+        text-align: center;
+    }
+
+    .coaches_grid {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
+    .coaches_grid>article.coaches {
+        text-align: center;
+    }
+
+    .coaches_meta,
+    .coaches_text {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
+
 
 /* Project grid on small screens (600px and below) */
 @media (max-width: 600px) {
@@ -221,7 +247,7 @@
     .modal-text {
         font-size: 14px;
     }
-    
+
     .index-col {
         flex-basis: auto;
     }
