@@ -1,0 +1,301 @@
+/* ---------- GLOBAL RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    background-color: #1358af;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+/* ---------- INDEX PAGE BACKGROUND ---------- */
+
+body.index-body {
+    background-color: #1358af;
+}
+
+body.index-body .coaches {
+    background-color: white;
+}
+/* ---------- HEADER / HERO SECTIONS ---------- */
+
+.header,
+.textimg {
+    width: 100%;
+    background-color: #1358af;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header {
+    min-height: 0px;
+}
+
+/* Hero section layout */
+.textimg {
+    min-height: 200px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------- NAVBAR ---------- */
+
+nav {
+    display: flex;
+    padding: 1% 2%;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+    padding-right: 100px;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.nav-links ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Navbar underline + hover + active */
+.nav-links ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 0.5s;
+}
+
+.nav-links ul li a:hover::after,
+.nav-links ul li a.active::after {
+    width: 100%;
+}
+
+/* ---------- HERO TEXT & IMAGE ---------- */
+
+.text-box {
+    width: 30%;
+    min-width: 300px;
+    color: white;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box h1 {
+    font-size: 80px;
+    margin: 0 0 10px;
+}
+
+.text-box p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.image1 {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    background-color: #1358af;
+}
+
+.image1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+}
+
+/* Hero buttons */
+
+.hero-buttons {
+    margin-top: 18px;
+    display: flex;
+    gap: 15px;
+}
+
+.hero-btn {
+    padding: 10px 18px;
+    background-color: white;
+    color: #1358af;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.25s ease;
+    border: 2px solid white;
+}
+
+.hero-btn:hover {
+    background-color: #1358af;
+    color: white;
+    border: 2px solid white;
+    transform: translateY(-2px);
+}
+
+/* ---------- MEET THE COACHES (matches your HTML) ---------- */
+.coaches {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Title area */
+.coaches_header h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin: 0 0 10px;
+  letter-spacing: 0.2px;
+}
+
+.coaches_header p {
+  max-width: 900px;
+  margin: 0 0 36px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Two columns layout */
+.coaches_grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 120px;
+  row-gap: 56px;
+  align-items: start;
+}
+
+/* IMPORTANT: your cards are <article class="coaches"> (same class as the section)
+   This selector targets only the cards inside the grid (so it won't mess up the section). */
+.coaches_grid > article.coaches {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: #111;
+}
+
+/* Photo */
+.coaches_photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.coaches_photo img {
+  width: 320px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+}
+
+/* Name */
+.coaches_name {
+  font-size: 2rem;
+  margin: 0 0 6px;
+  font-weight: 750;
+}
+
+/* Meta text (and your <li> items inside it) */
+.coaches_meta {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Your HTML has <li> inside a <div class="coaches_meta"> (not valid HTML, but we can still style it) */
+.coaches_meta li {
+  list-style: none;     /* remove bullets */
+  margin: 4px 0;
+  padding-left: 0;
+}
+
+/* Question + paragraph */
+.coaches_question {
+  margin: 18px 0 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.coaches_text {
+  margin: 0;
+  color: #333;
+  line-height: 1.75;
+  max-width: 520px;
+}
+
+/* Responsive: stack to 1 column */
+@media (max-width: 900px) {
+  .coaches_grid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .coaches_photo img {
+    width: min(360px, 100%);
+  }
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 16px 0 16px;
+    background-color: #1358af;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+.icons .fa {
+    color: white;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 40px;
+}
+
+/* ---------- SMALL CLEANUP ---------- */
+
+.index-body section {
+    margin: 0;
+    border: 0;
+}
