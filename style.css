@@ -28,6 +28,7 @@ body.index-body {
   background-position: center;
   background-size: cover;
   position: relative;
+  gap: 40px;   /* adjust this number */
 }
 
 .header {
@@ -177,7 +178,8 @@ nav {
 }
 
 .about-images img {
-  width: 18%; /* smaller images */
+  width: 18%;
+  /* smaller images */
   padding-top: 70px;
 }
 
@@ -262,13 +264,16 @@ nav {
 /* Two columns layout */
 .coaches_grid {
   display: grid;
-  grid-template-columns: 360px 360px; /* narrower columns */
-  justify-content: center; /* centers both cards as a group */
-  column-gap: 200px; /* tighter gap */
+  grid-template-columns: 360px 360px;
+  /* narrower columns */
+  justify-content: center;
+  /* centers both cards as a group */
+  column-gap: 200px;
+  /* tighter gap */
   row-gap: 56px;
 }
 
-.coaches_grid > article.coaches {
+.coaches_grid>article.coaches {
   padding: 0;
   margin: 0;
   text-align: left;
@@ -344,7 +349,8 @@ nav {
 }
 
 .info-images img {
-  width: 18%; /* smaller images */
+  width: 18%;
+  /* smaller images */
   padding-top: 70px;
 }
 
