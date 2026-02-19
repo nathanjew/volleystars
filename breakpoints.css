@@ -178,6 +178,62 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* --- Sign Up section: mobile/tablet --- */
+    .signup {
+        padding: 50px 20px;
+    }
+
+    .signup-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .signup-text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .signup-buttons {
+        justify-content: center;
+    }
+
+    .signup-btn {
+        width: 100%;
+        max-width: 420px;
+        text-align: center;
+    }
+
+    .signup-images {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .signup-images img {
+        width: min(70vw, 260px);
+        height: auto;
+    }
+
+    /* --- About images: responsive --- */
+    .about-images {
+        margin-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .about-images img {
+        width: min(44vw, 260px);
+        height: auto;
+        padding-top: 0;
+        border-radius: 12px;
+    }
+
+
 }
 
 
@@ -296,4 +352,24 @@
         width: 100px;
         border-radius: 50%;
     }
+
+    /* --- Sign Up section: phones --- */
+    .signup {
+        padding: 40px 16px;
+    }
+
+    .signup-text p {
+        font-size: 1rem;
+    }
+
+    .signup-images img {
+        width: min(75vw, 240px);
+    }
+
+    /* --- About images: phones --- */
+    .about-images img {
+        width: 92vw;
+        max-width: 360px;
+    }
+
 }
