@@ -264,19 +264,16 @@ nav {
 /* Two columns layout */
 .coaches_grid {
   display: grid;
-  grid-template-columns: 360px 360px;
-  /* narrower columns */
+  /* grid-template-columns: 360px 360px; */ /* CHANGED THIS FOR 1 COACH */
   justify-content: center;
-  /* centers both cards as a group */
   column-gap: 200px;
-  /* tighter gap */
   row-gap: 56px;
 }
 
 .coaches_grid>article.coaches {
   padding: 0;
   margin: 0;
-  text-align: left;
+  text-align: center; /* CHANGED THIS FOR 1 COACH */
   color: #111;
 }
 
