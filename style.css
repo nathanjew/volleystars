@@ -264,7 +264,7 @@ nav {
 /* Two columns layout */
 .coaches_grid {
   display: grid;
-  /* grid-template-columns: 360px 360px; */ /* CHANGED THIS FOR 1 COACH */
+  grid-template-columns: 360px 360px;
   justify-content: center;
   column-gap: 200px;
   row-gap: 56px;
@@ -273,7 +273,7 @@ nav {
 .coaches_grid>article.coaches {
   padding: 0;
   margin: 0;
-  text-align: center; /* CHANGED THIS FOR 1 COACH */
+  text-align: center;
   color: #111;
 }
 
@@ -312,6 +312,7 @@ nav {
   line-height: 1.75;
   max-width: 100%;
   list-style: none;
+  text-align: center;
 }
 
 /* ---------- Map ---------- */
